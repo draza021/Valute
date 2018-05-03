@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="374" y="504"/>
         </scene>
-        <!--Convert Controller-->
+        <!--KONVERTER-->
         <scene sceneID="NMf-yk-dCj">
             <objects>
                 <viewController storyboardIdentifier="ConvertController" id="bKo-PO-wHh" customClass="ConvertController" customModule="Valute" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fpo-yx-ECT"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jii-nA-bfX"/>
+                    <navigationItem key="navigationItem" title="KONVERTER" id="jii-nA-bfX">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Jct-I9-lbn"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bG9-k1-Voy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
