@@ -33,7 +33,18 @@
                     <view key="view" contentMode="scaleToFill" id="1Di-eM-KgC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="globalbg" translatesAutoresizingMaskIntoConstraints="NO" id="LhE-Th-bmD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LhE-Th-bmD" secondAttribute="trailing" id="5c0-Bn-CkK"/>
+                            <constraint firstAttribute="bottom" secondItem="LhE-Th-bmD" secondAttribute="bottom" id="THH-Fj-iPx"/>
+                            <constraint firstItem="LhE-Th-bmD" firstAttribute="top" secondItem="1Di-eM-KgC" secondAttribute="top" id="VR7-iQ-ctk"/>
+                            <constraint firstItem="LhE-Th-bmD" firstAttribute="leading" secondItem="1Di-eM-KgC" secondAttribute="leading" id="tOG-N6-AGk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fpo-yx-ECT"/>
                     </view>
                     <navigationItem key="navigationItem" id="jii-nA-bfX"/>
@@ -43,4 +54,7 @@
             <point key="canvasLocation" x="1119" y="503"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="globalbg" width="260" height="444"/>
+    </resources>
 </document>

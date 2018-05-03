@@ -12,6 +12,7 @@
 		C20012C4209A63720078BF4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20012C3209A63720078BF4D /* Assets.xcassets */; };
 		C20012C7209A63720078BF4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20012C5209A63720078BF4D /* LaunchScreen.storyboard */; };
 		C20012D0209A6D1A0078BF4D /* ConvertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20012CE209A6D1A0078BF4D /* ConvertController.swift */; };
+		C2124897209B2EAB00605328 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2124896209B2EAB00605328 /* Icons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C20012C6209A63720078BF4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C20012C8209A63720078BF4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C20012CE209A6D1A0078BF4D /* ConvertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertController.swift; sourceTree = "<group>"; };
+		C2124896209B2EAB00605328 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				C20012BC209A635C0078BF4D /* AppDelegate.swift */,
 				C20012C0209A635C0078BF4D /* Main.storyboard */,
 				C20012C3209A63720078BF4D /* Assets.xcassets */,
+				C2124896209B2EAB00605328 /* Icons.xcassets */,
 				C20012C5209A63720078BF4D /* LaunchScreen.storyboard */,
 				C20012C8209A63720078BF4D /* Info.plist */,
 				C20012CE209A6D1A0078BF4D /* ConvertController.swift */,
@@ -124,6 +127,7 @@
 			files = (
 				C20012C7209A63720078BF4D /* LaunchScreen.storyboard in Resources */,
 				C20012C4209A63720078BF4D /* Assets.xcassets in Resources */,
+				C2124897209B2EAB00605328 /* Icons.xcassets in Resources */,
 				C20012C2209A635C0078BF4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
