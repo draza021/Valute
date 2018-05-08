@@ -17,6 +17,10 @@
 		C212489B209B332500605328 /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212489A209B332500605328 /* PickerController.swift */; };
 		C212489D209B49F300605328 /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212489C209B49F300605328 /* KeypadView.swift */; };
 		C212489F209B4A1600605328 /* CurrencyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212489E209B4A1600605328 /* CurrencyBoxView.swift */; };
+		C23484E920A184D900444CA3 /* TestViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23484E820A184D900444CA3 /* TestViewControllers.storyboard */; };
+		C23484EB20A1991B00444CA3 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23484EA20A1991B00444CA3 /* BlueViewController.swift */; };
+		C23484ED20A199E600444CA3 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23484EC20A199E600444CA3 /* RedViewController.swift */; };
+		C23484EF20A19E1E00444CA3 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23484EE20A19E1E00444CA3 /* YellowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		C212489A209B332500605328 /* PickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerController.swift; sourceTree = "<group>"; };
 		C212489C209B49F300605328 /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
 		C212489E209B4A1600605328 /* CurrencyBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyBoxView.swift; sourceTree = "<group>"; };
+		C23484E820A184D900444CA3 /* TestViewControllers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestViewControllers.storyboard; sourceTree = "<group>"; };
+		C23484EA20A1991B00444CA3 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		C23484EC20A199E600444CA3 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		C23484EE20A19E1E00444CA3 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 			children = (
 				C20012BC209A635C0078BF4D /* AppDelegate.swift */,
 				C20012C0209A635C0078BF4D /* Main.storyboard */,
+				C23484E820A184D900444CA3 /* TestViewControllers.storyboard */,
+				C23484EC20A199E600444CA3 /* RedViewController.swift */,
+				C23484EE20A19E1E00444CA3 /* YellowViewController.swift */,
+				C23484EA20A1991B00444CA3 /* BlueViewController.swift */,
 				C212489C209B49F300605328 /* KeypadView.swift */,
 				C212489E209B4A1600605328 /* CurrencyBoxView.swift */,
 				C2124898209B31FA00605328 /* Flags.xcassets */,
@@ -142,6 +154,7 @@
 				C20012C4209A63720078BF4D /* Assets.xcassets in Resources */,
 				C2124897209B2EAB00605328 /* Icons.xcassets in Resources */,
 				C20012C2209A635C0078BF4D /* Main.storyboard in Resources */,
+				C23484E920A184D900444CA3 /* TestViewControllers.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,10 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23484EF20A19E1E00444CA3 /* YellowViewController.swift in Sources */,
+				C23484ED20A199E600444CA3 /* RedViewController.swift in Sources */,
 				C212489D209B49F300605328 /* KeypadView.swift in Sources */,
 				C212489F209B4A1600605328 /* CurrencyBoxView.swift in Sources */,
 				C212489B209B332500605328 /* PickerController.swift in Sources */,
 				C20012BD209A635C0078BF4D /* AppDelegate.swift in Sources */,
+				C23484EB20A1991B00444CA3 /* BlueViewController.swift in Sources */,
 				C20012D0209A6D1A0078BF4D /* ConvertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

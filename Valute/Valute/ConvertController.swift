@@ -9,7 +9,13 @@
 import UIKit
 
 final class ConvertController: UIViewController {
-
+    
+    @IBOutlet weak var keypadView: KeypadView!
+    
+    override func viewDidLoad() {
+        
+        
+    }
 
 }
 

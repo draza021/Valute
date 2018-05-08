@@ -277,6 +277,25 @@
                                     <constraint firstItem="94w-if-6c1" firstAttribute="width" secondItem="guW-VV-Jrg" secondAttribute="width" id="pku-Zi-MfT"/>
                                     <constraint firstAttribute="trailing" secondItem="Ac6-1c-MMI" secondAttribute="trailing" id="rgS-KD-fcW"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="clearButton" destination="7NW-Sm-Egd" id="R3a-tr-r44"/>
+                                    <outlet property="dotButton" destination="yEd-kh-dRo" id="Zgp-RT-Ewk"/>
+                                    <outletCollection property="digitButtons" destination="Qin-Xg-W0b" collectionClass="NSMutableArray" id="MfH-jY-Qjl"/>
+                                    <outletCollection property="digitButtons" destination="6DG-kk-YwP" collectionClass="NSMutableArray" id="zEB-zd-0a6"/>
+                                    <outletCollection property="digitButtons" destination="yEe-RK-5fC" collectionClass="NSMutableArray" id="HUj-Wm-Kg4"/>
+                                    <outletCollection property="digitButtons" destination="lMk-Ra-f63" collectionClass="NSMutableArray" id="ANF-z4-1lp"/>
+                                    <outletCollection property="digitButtons" destination="0VH-HG-n8G" collectionClass="NSMutableArray" id="XLj-iR-tgR"/>
+                                    <outletCollection property="digitButtons" destination="tEd-pT-41J" collectionClass="NSMutableArray" id="1cR-eV-Gmu"/>
+                                    <outletCollection property="digitButtons" destination="nLW-13-8vI" collectionClass="NSMutableArray" id="MTd-iF-Q1t"/>
+                                    <outletCollection property="digitButtons" destination="7QD-Af-BaV" collectionClass="NSMutableArray" id="sQM-xi-NwQ"/>
+                                    <outletCollection property="digitButtons" destination="d7l-3E-pj0" collectionClass="NSMutableArray" id="7dX-bv-n5K"/>
+                                    <outletCollection property="digitButtons" destination="6dp-vk-gcI" collectionClass="NSMutableArray" id="Pae-0D-bob"/>
+                                    <outletCollection property="operatorButtons" destination="URb-rC-rq7" collectionClass="NSMutableArray" id="A4U-lR-f7f"/>
+                                    <outletCollection property="operatorButtons" destination="830-Vk-nvD" collectionClass="NSMutableArray" id="bT3-1y-JIc"/>
+                                    <outletCollection property="operatorButtons" destination="89W-F0-Lpf" collectionClass="NSMutableArray" id="Mpn-Gn-UPd"/>
+                                    <outletCollection property="operatorButtons" destination="r9c-it-OcQ" collectionClass="NSMutableArray" id="7Wk-I9-bXK"/>
+                                    <outletCollection property="operatorButtons" destination="Hpc-Of-NRO" collectionClass="NSMutableArray" id="4dO-wl-8pf"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOc-aM-tBR" userLabel="upper">
                                 <rect key="frame" x="0.0" y="64" width="375" height="228"/>
@@ -431,6 +450,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="keypadView" destination="OG4-ac-388" id="x5p-Tx-38N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bG9-k1-Voy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
