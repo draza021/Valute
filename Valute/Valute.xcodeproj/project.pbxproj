@@ -22,6 +22,8 @@
 		C23484ED20A199E600444CA3 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23484EC20A199E600444CA3 /* RedViewController.swift */; };
 		C23484EF20A19E1E00444CA3 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23484EE20A19E1E00444CA3 /* YellowViewController.swift */; };
 		C26CBDE220A9C02C00516442 /* UIKit-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */; };
+		C26CBDE420A9F27300516442 /* TestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26CBDE320A9F27300516442 /* TestVC.storyboard */; };
+		C26CBDE620A9F31000516442 /* TestDismissVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE520A9F31000516442 /* TestDismissVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		C23484EC20A199E600444CA3 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		C23484EE20A19E1E00444CA3 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit-Extensions.swift"; sourceTree = "<group>"; };
+		C26CBDE320A9F27300516442 /* TestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestVC.storyboard; sourceTree = "<group>"; };
+		C26CBDE520A9F31000516442 /* TestDismissVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDismissVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				C20012BC209A635C0078BF4D /* AppDelegate.swift */,
 				C20012C0209A635C0078BF4D /* Main.storyboard */,
 				C23484E820A184D900444CA3 /* TestViewControllers.storyboard */,
+				C26CBDE320A9F27300516442 /* TestVC.storyboard */,
+				C26CBDE520A9F31000516442 /* TestDismissVC.swift */,
 				C23484EC20A199E600444CA3 /* RedViewController.swift */,
 				C23484EE20A19E1E00444CA3 /* YellowViewController.swift */,
 				C23484EA20A1991B00444CA3 /* BlueViewController.swift */,
@@ -154,6 +160,7 @@
 			files = (
 				C2124899209B31FA00605328 /* Flags.xcassets in Resources */,
 				C20012C7209A63720078BF4D /* LaunchScreen.storyboard in Resources */,
+				C26CBDE420A9F27300516442 /* TestVC.storyboard in Resources */,
 				C20012C4209A63720078BF4D /* Assets.xcassets in Resources */,
 				C2124897209B2EAB00605328 /* Icons.xcassets in Resources */,
 				C20012C2209A635C0078BF4D /* Main.storyboard in Resources */,
@@ -177,6 +184,7 @@
 				C23484EB20A1991B00444CA3 /* BlueViewController.swift in Sources */,
 				C20012D0209A6D1A0078BF4D /* ConvertController.swift in Sources */,
 				C26CBDE220A9C02C00516442 /* UIKit-Extensions.swift in Sources */,
+				C26CBDE620A9F31000516442 /* TestDismissVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
