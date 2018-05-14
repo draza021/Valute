@@ -17,6 +17,10 @@ class TestDismissVC: UIViewController {
         
     }
 
-    
+    @IBAction func gotoAnotherVC() {
+        let storyboard = UIStoryboard(name: "TestVC", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DismissViewController")
+        show(vc, sender: self)
+    }
 
 }

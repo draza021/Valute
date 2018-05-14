@@ -24,6 +24,7 @@
 		C26CBDE220A9C02C00516442 /* UIKit-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */; };
 		C26CBDE420A9F27300516442 /* TestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26CBDE320A9F27300516442 /* TestVC.storyboard */; };
 		C26CBDE620A9F31000516442 /* TestDismissVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE520A9F31000516442 /* TestDismissVC.swift */; };
+		C26CBDE820A9F84100516442 /* DismissViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE720A9F84100516442 /* DismissViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit-Extensions.swift"; sourceTree = "<group>"; };
 		C26CBDE320A9F27300516442 /* TestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestVC.storyboard; sourceTree = "<group>"; };
 		C26CBDE520A9F31000516442 /* TestDismissVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDismissVC.swift; sourceTree = "<group>"; };
+		C26CBDE720A9F84100516442 /* DismissViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				C20012C0209A635C0078BF4D /* Main.storyboard */,
 				C23484E820A184D900444CA3 /* TestViewControllers.storyboard */,
 				C26CBDE320A9F27300516442 /* TestVC.storyboard */,
+				C26CBDE720A9F84100516442 /* DismissViewController.swift */,
 				C26CBDE520A9F31000516442 /* TestDismissVC.swift */,
 				C23484EC20A199E600444CA3 /* RedViewController.swift */,
 				C23484EE20A19E1E00444CA3 /* YellowViewController.swift */,
@@ -181,6 +184,7 @@
 				C212489F209B4A1600605328 /* CurrencyBoxView.swift in Sources */,
 				C212489B209B332500605328 /* PickerController.swift in Sources */,
 				C20012BD209A635C0078BF4D /* AppDelegate.swift in Sources */,
+				C26CBDE820A9F84100516442 /* DismissViewController.swift in Sources */,
 				C23484EB20A1991B00444CA3 /* BlueViewController.swift in Sources */,
 				C20012D0209A6D1A0078BF4D /* ConvertController.swift in Sources */,
 				C26CBDE220A9C02C00516442 /* UIKit-Extensions.swift in Sources */,
