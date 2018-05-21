@@ -16,20 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //let vc = storyboard.instantiateViewController(withIdentifier: "ConvertController")
-        //let testVCStoryboard = UIStoryboard(name: "TestViewControllers", bundle: Bundle.main)
-        //let nc = storyboard.instantiateInitialViewController()
-        //let testVC = testVCStoryboard.instantiateInitialViewController()
-        //window?.rootViewController = vc
-        //window?.rootViewController = nc
-        
-        let storyboard = UIStoryboard(name: "TestVC", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TestDismissVC")
-        
-        window?.rootViewController = vc
-        window?.makeKeyAndVisible()
         return true
     }
 

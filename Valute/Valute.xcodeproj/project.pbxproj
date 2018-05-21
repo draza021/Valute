@@ -17,14 +17,7 @@
 		C212489B209B332500605328 /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212489A209B332500605328 /* PickerController.swift */; };
 		C212489D209B49F300605328 /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212489C209B49F300605328 /* KeypadView.swift */; };
 		C212489F209B4A1600605328 /* CurrencyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212489E209B4A1600605328 /* CurrencyBoxView.swift */; };
-		C23484E920A184D900444CA3 /* TestViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23484E820A184D900444CA3 /* TestViewControllers.storyboard */; };
-		C23484EB20A1991B00444CA3 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23484EA20A1991B00444CA3 /* BlueViewController.swift */; };
-		C23484ED20A199E600444CA3 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23484EC20A199E600444CA3 /* RedViewController.swift */; };
-		C23484EF20A19E1E00444CA3 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23484EE20A19E1E00444CA3 /* YellowViewController.swift */; };
 		C26CBDE220A9C02C00516442 /* UIKit-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */; };
-		C26CBDE420A9F27300516442 /* TestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26CBDE320A9F27300516442 /* TestVC.storyboard */; };
-		C26CBDE620A9F31000516442 /* TestDismissVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE520A9F31000516442 /* TestDismissVC.swift */; };
-		C26CBDE820A9F84100516442 /* DismissViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE720A9F84100516442 /* DismissViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +33,7 @@
 		C212489A209B332500605328 /* PickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerController.swift; sourceTree = "<group>"; };
 		C212489C209B49F300605328 /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
 		C212489E209B4A1600605328 /* CurrencyBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyBoxView.swift; sourceTree = "<group>"; };
-		C23484E820A184D900444CA3 /* TestViewControllers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestViewControllers.storyboard; sourceTree = "<group>"; };
-		C23484EA20A1991B00444CA3 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
-		C23484EC20A199E600444CA3 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
-		C23484EE20A19E1E00444CA3 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit-Extensions.swift"; sourceTree = "<group>"; };
-		C26CBDE320A9F27300516442 /* TestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestVC.storyboard; sourceTree = "<group>"; };
-		C26CBDE520A9F31000516442 /* TestDismissVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDismissVC.swift; sourceTree = "<group>"; };
-		C26CBDE720A9F84100516442 /* DismissViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,25 +66,18 @@
 		C20012BB209A635C0078BF4D /* Valute */ = {
 			isa = PBXGroup;
 			children = (
-				C20012BC209A635C0078BF4D /* AppDelegate.swift */,
 				C20012C0209A635C0078BF4D /* Main.storyboard */,
-				C23484E820A184D900444CA3 /* TestViewControllers.storyboard */,
-				C26CBDE320A9F27300516442 /* TestVC.storyboard */,
-				C26CBDE720A9F84100516442 /* DismissViewController.swift */,
-				C26CBDE520A9F31000516442 /* TestDismissVC.swift */,
-				C23484EC20A199E600444CA3 /* RedViewController.swift */,
-				C23484EE20A19E1E00444CA3 /* YellowViewController.swift */,
-				C23484EA20A1991B00444CA3 /* BlueViewController.swift */,
+				C20012CE209A6D1A0078BF4D /* ConvertController.swift */,
+				C212489A209B332500605328 /* PickerController.swift */,
 				C212489C209B49F300605328 /* KeypadView.swift */,
-				C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */,
 				C212489E209B4A1600605328 /* CurrencyBoxView.swift */,
+				C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */,
 				C2124898209B31FA00605328 /* Flags.xcassets */,
 				C20012C3209A63720078BF4D /* Assets.xcassets */,
 				C2124896209B2EAB00605328 /* Icons.xcassets */,
 				C20012C5209A63720078BF4D /* LaunchScreen.storyboard */,
+				C20012BC209A635C0078BF4D /* AppDelegate.swift */,
 				C20012C8209A63720078BF4D /* Info.plist */,
-				C20012CE209A6D1A0078BF4D /* ConvertController.swift */,
-				C212489A209B332500605328 /* PickerController.swift */,
 			);
 			path = Valute;
 			sourceTree = "<group>";
@@ -163,11 +142,9 @@
 			files = (
 				C2124899209B31FA00605328 /* Flags.xcassets in Resources */,
 				C20012C7209A63720078BF4D /* LaunchScreen.storyboard in Resources */,
-				C26CBDE420A9F27300516442 /* TestVC.storyboard in Resources */,
 				C20012C4209A63720078BF4D /* Assets.xcassets in Resources */,
 				C2124897209B2EAB00605328 /* Icons.xcassets in Resources */,
 				C20012C2209A635C0078BF4D /* Main.storyboard in Resources */,
-				C23484E920A184D900444CA3 /* TestViewControllers.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,17 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C23484EF20A19E1E00444CA3 /* YellowViewController.swift in Sources */,
-				C23484ED20A199E600444CA3 /* RedViewController.swift in Sources */,
 				C212489D209B49F300605328 /* KeypadView.swift in Sources */,
 				C212489F209B4A1600605328 /* CurrencyBoxView.swift in Sources */,
 				C212489B209B332500605328 /* PickerController.swift in Sources */,
 				C20012BD209A635C0078BF4D /* AppDelegate.swift in Sources */,
-				C26CBDE820A9F84100516442 /* DismissViewController.swift in Sources */,
-				C23484EB20A1991B00444CA3 /* BlueViewController.swift in Sources */,
 				C20012D0209A6D1A0078BF4D /* ConvertController.swift in Sources */,
 				C26CBDE220A9C02C00516442 /* UIKit-Extensions.swift in Sources */,
-				C26CBDE620A9F31000516442 /* TestDismissVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
