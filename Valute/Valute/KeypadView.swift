@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol KeypadViewDelegate: class {
+    func buttonAnimationCompleted()
+}
+
 final class KeypadView: UIView {
     @IBOutlet var digitButtons: [UIButton]!
     @IBOutlet var operatorButtons: [UIButton]!
     @IBOutlet weak var dotButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
+    
+    weak var delegate: KeypadViewDelegate?
     
     var allButtons: [UIButton] {
         return digitButtons + operatorButtons + [dotButton] + [clearButton]
@@ -120,6 +126,39 @@ extension KeypadView {
         self.operation = nil
     }
 }
+
+extension KeypadView {
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        hideButtons()
+        animateButtons()
+        
+    }
+    
+    private func hideButtons() {
+        let rootViewWidth = self.layer.frame.width
+        for button in allButtons {
+            button.transform = CGAffineTransform(translationX: -rootViewWidth, y: 0)
+        }
+    }
+    
+    private func animateButtons() {
+        let animDurationSpring = 0.1
+        for (index, view) in allButtons.enumerated() {
+            //view.frame.origin.y += 30.0
+            UIView.animate(withDuration: animDurationSpring, delay: animDurationSpring * Double(index), usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
+                view.transform = CGAffineTransform(translationX: 0, y: 0)
+            }, completion: { _ in
+                self.delegate?.buttonAnimationCompleted()
+            })
+        }
+    }
+}
+
+
+
 
 
 

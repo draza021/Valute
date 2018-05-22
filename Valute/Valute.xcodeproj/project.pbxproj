@@ -16,7 +16,7 @@
 		C2124899209B31FA00605328 /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2124898209B31FA00605328 /* Flags.xcassets */; };
 		C212489B209B332500605328 /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212489A209B332500605328 /* PickerController.swift */; };
 		C212489D209B49F300605328 /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212489C209B49F300605328 /* KeypadView.swift */; };
-		C212489F209B4A1600605328 /* CurrencyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212489E209B4A1600605328 /* CurrencyBoxView.swift */; };
+		C212489F209B4A1600605328 /* CurrencyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212489E209B4A1600605328 /* CurrencyBox.swift */; };
 		C26CBDE220A9C02C00516442 /* UIKit-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		C2124898209B31FA00605328 /* Flags.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Flags.xcassets; sourceTree = "<group>"; };
 		C212489A209B332500605328 /* PickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerController.swift; sourceTree = "<group>"; };
 		C212489C209B49F300605328 /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
-		C212489E209B4A1600605328 /* CurrencyBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyBoxView.swift; sourceTree = "<group>"; };
+		C212489E209B4A1600605328 /* CurrencyBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyBox.swift; sourceTree = "<group>"; };
 		C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit-Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +70,7 @@
 				C20012CE209A6D1A0078BF4D /* ConvertController.swift */,
 				C212489A209B332500605328 /* PickerController.swift */,
 				C212489C209B49F300605328 /* KeypadView.swift */,
-				C212489E209B4A1600605328 /* CurrencyBoxView.swift */,
+				C212489E209B4A1600605328 /* CurrencyBox.swift */,
 				C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */,
 				C2124898209B31FA00605328 /* Flags.xcassets */,
 				C20012C3209A63720078BF4D /* Assets.xcassets */,
@@ -156,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C212489D209B49F300605328 /* KeypadView.swift in Sources */,
-				C212489F209B4A1600605328 /* CurrencyBoxView.swift in Sources */,
+				C212489F209B4A1600605328 /* CurrencyBox.swift in Sources */,
 				C212489B209B332500605328 /* PickerController.swift in Sources */,
 				C20012BD209A635C0078BF4D /* AppDelegate.swift in Sources */,
 				C20012D0209A6D1A0078BF4D /* ConvertController.swift in Sources */,
