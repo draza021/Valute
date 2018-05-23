@@ -8,8 +8,18 @@
 
 import UIKit
 
+protocol PickerControllerDelegate: class {
+    func pickerController(_ controller: PickerController, didSelectCurrency cc: String)
+}
+
 final class PickerController: UIViewController {
 
+    var currencies: [String] = [] {
+        didSet {
+            //    TBD: nesto
+        }
+    }
     
+    weak var delegate: PickerControllerDelegate?
 
 }

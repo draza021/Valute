@@ -17,8 +17,11 @@ final class ConvertController: UIViewController {
     weak var activeCurrencyBox: CurrencyBox?
     
     override func viewDidLoad() {
+        keypadView.animationDelegate = self
         keypadView.delegate = self
         hideCurrencyBoxes()
+        cleanupUI()
+        setupInitialState()
         
     }
 }
@@ -29,8 +32,25 @@ private extension ConvertController {
     @IBAction func pickCurrency() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let vc = storyboard.instantiateViewController(withIdentifier: "PickerController") as? PickerController {
+            vc.delegate = self
+            vc.currencies = Locale.commonISOCurrencyCodes
             show(vc, sender: self)
         }
+    }
+    
+    func cleanupUI() {
+        sourceCurrencyBox.amount = nil
+        targetCurrencyBox.amount = nil
+    }
+    
+    func setupInitialState() {
+        sourceCurrencyBox.currencyCode = UserDefaults.sourceCC
+        targetCurrencyBox.currencyCode = UserDefaults.targetCC
+    }
+    
+    @IBAction func changeCurrency(_ sender: CurrencyBox) {
+        activeCurrencyBox = sender
+        pickCurrency()
     }
 }
 
@@ -51,9 +71,21 @@ extension ConvertController {
     }
 }
 
-extension ConvertController: KeypadViewDelegate {
+extension ConvertController: KeypadViewAnimationDelegate {
     func buttonAnimationCompleted() {
         animateCurrencyBoxes()
+    }
+}
+
+extension ConvertController: KeypadViewDelegate {
+    func keypadView(_ keypad: KeypadView, didChangeValue value: String?) {
+        sourceCurrencyBox.amount = value
+    }
+}
+
+extension ConvertController: PickerControllerDelegate {
+    func pickerController(_ controller: PickerController, didSelectCurrency cc: String) {
+        activeCurrencyBox?.currencyCode = cc
     }
 }
 
