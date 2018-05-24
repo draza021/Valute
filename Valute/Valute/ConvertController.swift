@@ -85,6 +85,14 @@ extension ConvertController: KeypadViewDelegate {
 extension ConvertController: PickerControllerDelegate {
     func pickerController(_ controller: PickerController, didSelectCurrency cc: String) {
         activeCurrencyBox?.currencyCode = cc
+        
+        if activeCurrencyBox == sourceCurrencyBox {
+            UserDefaults.sourceCC = cc
+        } else {
+            UserDefaults.targetCC = cc
+        }
+        
+        navigationController?.popViewController(animated: true)
     }
 }
 
