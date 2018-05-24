@@ -22,6 +22,7 @@ final class CurrencyBox: UIControl {
         }
         set {
             label.text = newValue
+            updateFlagView(currencyCode)
         }
     }
     
@@ -43,3 +44,23 @@ final class CurrencyBox: UIControl {
     }
     
 }
+
+private extension CurrencyBox {
+    
+    func updateFlagView(_ cc: String?) {
+        guard let cc = cc else {
+            flagView.image = UIImage(named: "empty")
+            return
+        }
+        
+        let countryCode = Locale.countryCode(for: cc).lowercased()
+        flagView.image = UIImage(named: countryCode) ?? #imageLiteral(resourceName: "empty") // image literal empty flag
+    }
+}
+
+
+
+
+
+
+

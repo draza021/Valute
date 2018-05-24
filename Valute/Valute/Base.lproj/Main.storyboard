@@ -447,13 +447,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fpo-yx-ECT"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Currency Converter" id="jii-nA-bfX">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Jct-I9-lbn">
-                            <connections>
-                                <action selector="pickCurrency" destination="bKo-PO-wHh" id="mcw-hP-sNV"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Currency Converter" id="jii-nA-bfX"/>
                     <connections>
                         <outlet property="keypadView" destination="OG4-ac-388" id="x5p-Tx-38N"/>
                         <outlet property="sourceCurrencyBox" destination="xhD-0M-v6o" id="RlW-AO-B4y"/>
