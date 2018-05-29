@@ -42,6 +42,11 @@ final class KeypadView: UIView {
         }
     }
     
+    var amount: Decimal? {
+        guard let str = stringAmount else { return nil }
+        return NumberFormatter.decimalFormatter.number(from: str)?.decimalValue
+    }
+    
     enum Operation {
         case add, subtract, divide, multiply
     }

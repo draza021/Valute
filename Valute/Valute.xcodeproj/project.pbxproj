@@ -21,6 +21,7 @@
 		C23AABB820B6E9DD005ADA00 /* PickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AABB720B6E9DD005ADA00 /* PickerCell.swift */; };
 		C26CBDE220A9C02C00516442 /* UIKit-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */; };
 		C2823BF220B5ADD00024A888 /* UserDefaults-Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2823BF120B5ADD00024A888 /* UserDefaults-Shared.swift */; };
+		C286EDA720BD730300BC1B00 /* ExchangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286EDA620BD730300BC1B00 /* ExchangeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C23AABB720B6E9DD005ADA00 /* PickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerCell.swift; sourceTree = "<group>"; };
 		C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit-Extensions.swift"; sourceTree = "<group>"; };
 		C2823BF120B5ADD00024A888 /* UserDefaults-Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults-Shared.swift"; sourceTree = "<group>"; };
+		C286EDA620BD730300BC1B00 /* ExchangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C20012CE209A6D1A0078BF4D /* ConvertController.swift */,
+				C286EDA620BD730300BC1B00 /* ExchangeManager.swift */,
 				C23AABB520B6D8E1005ADA00 /* Locale-Extensions.swift */,
 				C2823BF120B5ADD00024A888 /* UserDefaults-Shared.swift */,
 				C212489A209B332500605328 /* PickerController.swift */,
@@ -166,6 +169,7 @@
 			files = (
 				C212489D209B49F300605328 /* KeypadView.swift in Sources */,
 				C212489F209B4A1600605328 /* CurrencyBox.swift in Sources */,
+				C286EDA720BD730300BC1B00 /* ExchangeManager.swift in Sources */,
 				C2823BF220B5ADD00024A888 /* UserDefaults-Shared.swift in Sources */,
 				C212489B209B332500605328 /* PickerController.swift in Sources */,
 				C20012BD209A635C0078BF4D /* AppDelegate.swift in Sources */,

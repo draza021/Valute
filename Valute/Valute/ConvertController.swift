@@ -14,6 +14,18 @@ final class ConvertController: UIViewController {
     @IBOutlet weak var sourceCurrencyBox: CurrencyBox!
     @IBOutlet weak var targetCurrencyBox: CurrencyBox!
     
+    
+    private var sourceCurrencyCode: String = UserDefaults.sourceCC
+    private var targetCurrencyCode: String = UserDefaults.targetCC
+    var amount: Decimal? {
+        didSet {
+            if !isViewLoaded { return }
+            convert()
+        }
+    }
+    private var rate: Decimal?
+    
+    
     weak var activeCurrencyBox: CurrencyBox?
     
     override func viewDidLoad() {
@@ -23,6 +35,8 @@ final class ConvertController: UIViewController {
         cleanupUI()
         setupInitialState()
         
+        fetchRate()
+        convert()
     }
 }
 
@@ -43,13 +57,29 @@ private extension ConvertController {
     }
     
     func setupInitialState() {
-        sourceCurrencyBox.currencyCode = UserDefaults.sourceCC
-        targetCurrencyBox.currencyCode = UserDefaults.targetCC
+        sourceCurrencyBox.currencyCode = sourceCurrencyCode
+        targetCurrencyBox.currencyCode = targetCurrencyCode
     }
     
     @IBAction func changeCurrency(_ sender: CurrencyBox) {
         activeCurrencyBox = sender
         pickCurrency()
+    }
+    
+    func fetchRate() {
+        ExchangeManager.shared.rate(for: targetCurrencyCode, versus: sourceCurrencyCode) {
+            [weak self] r in
+            self?.rate = r
+        }
+    }
+    
+    func convert() {
+        guard let amount = amount,
+            let rate = rate else { targetCurrencyBox.amount = nil
+                return
+        }
+        let res = amount * rate
+        targetCurrencyBox.amount = NumberFormatter.decimalFormatter.string(for: res)
     }
 }
 
@@ -79,6 +109,7 @@ extension ConvertController: KeypadViewAnimationDelegate {
 extension ConvertController: KeypadViewDelegate {
     func keypadView(_ keypad: KeypadView, didChangeValue value: String?) {
         sourceCurrencyBox.amount = value
+        amount = keypad.amount
     }
 }
 
@@ -93,6 +124,7 @@ extension ConvertController: PickerControllerDelegate {
         }
         
         navigationController?.popViewController(animated: true)
+        fetchRate()
     }
 }
 
