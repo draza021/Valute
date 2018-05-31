@@ -22,6 +22,7 @@
 		C26CBDE220A9C02C00516442 /* UIKit-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */; };
 		C2823BF220B5ADD00024A888 /* UserDefaults-Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2823BF120B5ADD00024A888 /* UserDefaults-Shared.swift */; };
 		C286EDA720BD730300BC1B00 /* ExchangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286EDA620BD730300BC1B00 /* ExchangeManager.swift */; };
+		C2CD317020C004000021F70C /* ExchangeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD316F20C004000021F70C /* ExchangeError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		C26CBDE120A9C02C00516442 /* UIKit-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit-Extensions.swift"; sourceTree = "<group>"; };
 		C2823BF120B5ADD00024A888 /* UserDefaults-Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults-Shared.swift"; sourceTree = "<group>"; };
 		C286EDA620BD730300BC1B00 /* ExchangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeManager.swift; sourceTree = "<group>"; };
+		C2CD316F20C004000021F70C /* ExchangeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				C20012CE209A6D1A0078BF4D /* ConvertController.swift */,
 				C286EDA620BD730300BC1B00 /* ExchangeManager.swift */,
+				C2CD316F20C004000021F70C /* ExchangeError.swift */,
 				C23AABB520B6D8E1005ADA00 /* Locale-Extensions.swift */,
 				C2823BF120B5ADD00024A888 /* UserDefaults-Shared.swift */,
 				C212489A209B332500605328 /* PickerController.swift */,
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2CD317020C004000021F70C /* ExchangeError.swift in Sources */,
 				C212489D209B49F300605328 /* KeypadView.swift in Sources */,
 				C212489F209B4A1600605328 /* CurrencyBox.swift in Sources */,
 				C286EDA720BD730300BC1B00 /* ExchangeManager.swift in Sources */,
