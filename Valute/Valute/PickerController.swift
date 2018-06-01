@@ -83,7 +83,7 @@ extension PickerController: UITableViewDataSource {
 extension PickerController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var cc: String = ""
+        var cc: String
         if isFiltering() {
             cc = filteredCurrencies[indexPath.row]
         } else {
@@ -97,7 +97,6 @@ extension PickerController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)
     }
-    
 }
 
 extension PickerController {
