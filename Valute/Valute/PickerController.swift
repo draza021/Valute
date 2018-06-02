@@ -99,7 +99,7 @@ extension PickerController: UISearchResultsUpdating {
     }
 }
 
-extension PickerController {
+private extension PickerController {
     // MARK: - Private instance methods
     
     func searchBarIsEmpty() -> Bool {
