@@ -34,16 +34,14 @@ final class PickerController: UIViewController {
         
         configureUI()
         
-        tableView.dataSource = self
-        tableView.delegate = self
     }
-    
-    
 }
 
 private extension PickerController {
     
     func configureUI() {
+        tableView.dataSource = self
+        tableView.delegate = self
         tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "globalbg"))
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 54
@@ -99,7 +97,7 @@ extension PickerController: UISearchResultsUpdating {
     }
 }
 
-extension PickerController {
+private extension PickerController {
     // MARK: - Private instance methods
     
     func searchBarIsEmpty() -> Bool {

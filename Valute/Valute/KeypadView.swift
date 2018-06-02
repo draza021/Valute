@@ -98,6 +98,10 @@ private extension KeypadView {
     }
     
     @objc func chooseOperation(_ sender: UIButton) {
+        if stringAmount == nil {
+            didUntouchButton(sender)
+            return
+        }
         if operation == nil {
             firstOperand = extractOperand()
             stringAmount = nil
@@ -107,7 +111,7 @@ private extension KeypadView {
             switch caption {
             case "+":
                 operation = .add
-            case "−":
+            case "-":
                 operation = .subtract
             case "×":
                 operation = .multiply

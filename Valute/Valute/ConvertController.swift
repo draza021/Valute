@@ -23,7 +23,12 @@ final class ConvertController: UIViewController {
             convert()
         }
     }
-    private var rate: Decimal?
+    private var rate: Decimal? {
+        didSet {
+            if !isViewLoaded { return }
+            convert()
+        }
+    }
     
     
     weak var activeCurrencyBox: CurrencyBox?
@@ -136,8 +141,10 @@ extension ConvertController: PickerControllerDelegate {
         
         if activeCurrencyBox == sourceCurrencyBox {
             UserDefaults.sourceCC = cc
+            sourceCurrencyCode = cc
         } else {
             UserDefaults.targetCC = cc
+            targetCurrencyCode = cc
         }
         
         navigationController?.popViewController(animated: true)
