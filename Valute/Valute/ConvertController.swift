@@ -76,11 +76,12 @@ private extension ConvertController {
             [weak self] r, error in
             
             DispatchQueue.main.async {
+                [weak self] in
                 if let error = error as? ExchangeError {
                     // display error
                     switch error {
                     case .fetchingRates:
-                        break
+                        return
                     case .missingRate:
                         break
                     case .invalidResponse:
@@ -88,6 +89,15 @@ private extension ConvertController {
                     case .urlError(let error):
                         break
                     }
+                    
+                    let alertController = UIAlertController(title: error.title,
+                                                            message: error.message,
+                                                            preferredStyle: .alert)
+                    let alertAction = UIAlertAction(title: "OK", style: .default)
+                    alertController.addAction(alertAction)
+                    
+                    self?.present(alertController, animated: true)
+                    
                     return
                 }
                 self?.rate = r

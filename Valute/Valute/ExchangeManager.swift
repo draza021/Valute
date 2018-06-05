@@ -32,6 +32,7 @@ final class ExchangeManager {
             if lastUpdated == nil {
                 fetchCurrencyRates(for: targetCC, versus: sourceCC, callback: callback)
                 callback(nil, ExchangeError.fetchingRates)
+                return
             }
             
             callback(nil, ExchangeError.missingRate)
