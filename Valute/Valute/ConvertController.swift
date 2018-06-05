@@ -14,6 +14,12 @@ final class ConvertController: UIViewController {
     @IBOutlet weak var sourceCurrencyBox: CurrencyBox!
     @IBOutlet weak var targetCurrencyBox: CurrencyBox!
     
+    @IBOutlet weak var pickerContainerView: UIView!
+    @IBOutlet var containerHeightConstraint: NSLayoutConstraint!
+    @IBOutlet var containerBottomEdgeConstraint: NSLayoutConstraint!
+    @IBOutlet var panel2UpperEqualHeight: NSLayoutConstraint!
+    
+    private weak var pickerController: PickerController?
     
     private var sourceCurrencyCode: String = UserDefaults.sourceCC
     private var targetCurrencyCode: String = UserDefaults.targetCC
@@ -52,7 +58,25 @@ private extension ConvertController {
         if let vc = storyboard.instantiateViewController(withIdentifier: "PickerController") as? PickerController {
             vc.delegate = self
             vc.currencies = Locale.commonISOCurrencyCodes
-            show(vc, sender: self)
+            
+            addChildViewController(vc)
+            pickerContainerView.addSubview(vc.view)
+            vc.view.translatesAutoresizingMaskIntoConstraints = false
+            
+            // setup constraints
+            vc.view.topAnchor.constraint(equalTo: pickerContainerView.topAnchor, constant: 0).isActive = true
+            vc.view.leadingAnchor.constraint(equalTo: pickerContainerView.leadingAnchor, constant: 0).isActive = true
+            let bac = vc.view.bottomAnchor.constraint(equalTo: pickerContainerView.bottomAnchor, constant: 0)
+            bac.priority = UILayoutPriority(999)
+            bac.isActive = true
+            let tac = vc.view.trailingAnchor.constraint(equalTo: pickerContainerView.trailingAnchor, constant: 0)
+            tac.priority = UILayoutPriority(999)
+            tac.isActive = true
+            
+            vc.didMove(toParentViewController: self)
+            
+            pickerController = vc
+            
         }
     }
     
@@ -67,8 +91,25 @@ private extension ConvertController {
     }
     
     @IBAction func changeCurrency(_ sender: CurrencyBox) {
+        if let vc = pickerController {
+            collapsePickerController(vc)
+            return
+        }
+        
         activeCurrencyBox = sender
-        pickCurrency()
+        
+        panel2UpperEqualHeight.isActive = true
+        containerBottomEdgeConstraint.isActive = true
+        containerHeightConstraint.isActive = false
+        
+        UIView.animate(withDuration: 0.3, animations: { [weak self] in
+            self?.view.layoutIfNeeded()
+        }) { [weak self] isSuccessful in
+            if !isSuccessful {
+                return
+            }
+            self?.pickCurrency()
+        }
     }
     
     func fetchRate() {
@@ -117,6 +158,23 @@ private extension ConvertController {
 
 extension ConvertController {
     
+    func collapsePickerController(_ vc: UIViewController) {
+        vc.willMove(toParentViewController: nil)
+        if vc.isViewLoaded {
+            vc.view.removeFromSuperview()
+        }
+        vc.removeFromParentViewController()
+        
+        containerBottomEdgeConstraint.isActive = false
+        panel2UpperEqualHeight.isActive = false
+        containerHeightConstraint.isActive = true
+        
+        UIView.animate(withDuration: 0.3, animations: { [weak self] in
+            self?.view.layoutIfNeeded()
+        })
+        pickerController = nil
+    }
+    
     func hideCurrencyBoxes() {
         let rootViewWidth = self.view.frame.width
         sourceCurrencyBox.transform = CGAffineTransform(translationX: -rootViewWidth, y: 0)
@@ -157,7 +215,10 @@ extension ConvertController: PickerControllerDelegate {
             targetCurrencyCode = cc
         }
         
-        navigationController?.popViewController(animated: true)
+        if let vc = pickerController {
+            collapsePickerController(vc)
+        }
+        
         fetchRate()
     }
 }

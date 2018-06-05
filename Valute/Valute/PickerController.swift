@@ -49,7 +49,7 @@ private extension PickerController {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search Currency"
-        navigationItem.searchController = searchController
+        self.parent?.navigationController?.navigationItem.searchController = searchController
         definesPresentationContext = true
     }
 }
